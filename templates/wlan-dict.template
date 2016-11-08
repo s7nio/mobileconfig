@@ -1,0 +1,30 @@
+<dict>
+    <key>AutoJoin</key>
+    <true/>
+    <key>CaptiveBypass</key>
+    <false/>
+    <key>EncryptionType</key>
+    <string>::ENCRYPTION::</string>
+    <key>HIDDEN_NETWORK</key>
+    <false/>
+    <key>IsHotspot</key>
+    <false/>
+    <key>Password</key>
+    <string>::PASSWORD::</string>
+    <key>PayloadDescription</key>
+    <string>::DESCRIPTION::</string>
+    <key>PayloadDisplayName</key>
+    <string>::DISPLAY_NAME::</string>
+    <key>PayloadIdentifier</key>
+    <string>com.apple.wifi.managed.::UUID::</string>
+    <key>PayloadType</key>
+    <string>com.apple.wifi.managed</string>
+    <key>PayloadUUID</key>
+    <string>::UUID::</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+    <key>ProxyType</key>
+    <string>None</string>
+    <key>SSID_STR</key>
+    <string>::SSID::</string>
+</dict>

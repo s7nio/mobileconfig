@@ -1,0 +1,5 @@
+{"displayName": "YOUR PROFILE NAME",
+  "wlan": [
+  { "ssid":"WLAN 2.4G", "encryption":"WPA", "password":"YOUR_PASSWORD", "displayName":"WLAN Home", "description":"WLAN Setting" },
+  { "ssid":"WLAN 5G", "encryption":"WPA2", "password":"YOUR_PASSWORD", "displayName":"WLAN Work", "description":"WLAN Setting" }
+]}
