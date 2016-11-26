@@ -1,8 +1,10 @@
 # mobileconfig
 
-Ruby script to generate easy mobileconfig's
+Ruby script to generate easy mobileconfig's for:
 
 - WLAN
+
+_*.json and *.mobileconfig files are not tracked in this repository._
 
 ## install
 
@@ -13,8 +15,8 @@ cd mobileconfig
 
 ## usage
 
-1. Edit and save the ```wlan.json``` file
-2. Run the script e.g.
+1. Edit and save the ```wlan.json.default``` as ```wlan.json``` file
+2. Run the script with following sample command
 ```shell
 ruby -r "./mobileconfig.rb" -e "Mobileconfig.new.generate_wlan('wlan.json', 'WLAN-NAME-'+Time.now.strftime('%F')+'.mobileconfig')"
 ```
