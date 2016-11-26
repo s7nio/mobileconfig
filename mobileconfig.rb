@@ -5,7 +5,7 @@ require 'securerandom'
 
 class Mobileconfig
 
-  TEMPLATE_FOLDER = './templates/'
+  TEMPLATE_FOLDER = './templates'
 
   def generate_wlan(input, output)
     wlanDicts = Array.new(0)
@@ -15,8 +15,11 @@ class Mobileconfig
     end
     # write and handle mobileconfig
     File.open(output, 'w') do |out|
-      content = File.read("#{TEMPLATE_FOLDER}wlan.template")
+      content = File.read("#{TEMPLATE_FOLDER}/wlan.template")
       content = replace_str(content, 'DISPLAY_NAME', data['displayName'])
+      content = replace_str(content, 'DESCRIPTION', data['description'])
+      content = replace_str(content, 'ORGANISATION', data['organisation'])
+      content = replace_str(content, 'PROFILE_INSTALL_MESSAGE', data['installMessage'])
       content = replace_str(content, 'HOSTNAME', `hostname`.strip)
       content = replace_str(content, 'UUID', SecureRandom.uuid)
       content = replace_str(content, 'WLAN_DICTS', wlanDicts.join(' '))
@@ -25,7 +28,7 @@ class Mobileconfig
   end
 
   def wlan_dict item
-    content = File.read("#{TEMPLATE_FOLDER}wlan-dict.template")
+    content = File.read("#{TEMPLATE_FOLDER}/wlan-dict.template")
     content = replace_str(content, 'UUID', SecureRandom.uuid)
     content = replace_str(content, 'SSID', item['ssid'])
     content = replace_str(content, 'ENCRYPTION', item['encryption'])

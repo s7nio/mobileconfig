@@ -2,6 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>ConsentText</key>
+	<dict>
+		<key>default</key>
+		<string>::PROFILE_INSTALL_MESSAGE::</string>
+	</dict>
 	<key>HasRemovalPasscode</key>
 	<false/>
 	<key>PayloadContent</key>
@@ -9,8 +14,12 @@
     ::WLAN_DICTS::</array>
 	<key>PayloadDisplayName</key>
 	<string>::DISPLAY_NAME::</string>
+	<key>PayloadDescription</key>
+	<string>::DESCRIPTION::</string>
 	<key>PayloadIdentifier</key>
 	<string>::HOSTNAME::.::UUID::</string>
+	<key>PayloadOrganization</key>
+	<string>::ORGANISATION::</string>
 	<key>PayloadRemovalDisallowed</key>
 	<false/>
 	<key>PayloadType</key>

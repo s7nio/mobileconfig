@@ -1,5 +1,10 @@
-{"displayName": "YOUR PROFILE NAME",
+{"displayName": "YOUR_PROFILE_NAME",
+  "description":"YOUR_PROFILE_DESCRIPTION",
+  "organisation":"YOUR_ORGANISATION",
+  "installMessage":"YOUR_PROFILE_INSTALL_MESSAGE",
   "wlan": [
-  { "ssid":"WLAN 2.4G", "encryption":"WPA", "password":"YOUR_PASSWORD", "displayName":"WLAN Home", "description":"WLAN Setting" },
-  { "ssid":"WLAN 5G", "encryption":"WPA2", "password":"YOUR_PASSWORD", "displayName":"WLAN Work", "description":"WLAN Setting" }
+    { "ssid":"WLAN 2.4G", "encryption":"Any", "password":"YOUR_PASSWORD",
+      "displayName":"WLAN_HOME", "description":"WLAN_HOME_SETTING" },
+    { "ssid":"WLAN 5G", "encryption":"WPA2", "password":"YOUR_PASSWORD",
+      "displayName":"WLAN_WORK", "description":"WLAN_WORK_SETTING"  }
 ]}
